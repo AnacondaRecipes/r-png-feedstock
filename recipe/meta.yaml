@@ -40,10 +40,13 @@ requirements:
 
   host:
     - r-base
+    - {{native}}libpng           # [win]
+    - libpng                     # [not win]
 
   run:
     - r-base
     - {{native}}gcc-libs         # [win]
+    - {{native}}libpng           # [win]
 
 test:
   commands:
